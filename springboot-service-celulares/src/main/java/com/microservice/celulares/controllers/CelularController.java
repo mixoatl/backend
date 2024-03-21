@@ -27,6 +27,11 @@ public class CelularController {
 		return service.findAll();
 	}
 	
+	@GetMapping("/celular/{id}")
+	public Celular detail(@PathVariable Long id){
+		return service.findById(id);
+	}
+	
 	@DeleteMapping("/celular/{id}")
 	public ResponseEntity<Void> drop(@PathVariable Long id){
 		service.deleteById(id);
