@@ -1,0 +1,5 @@
+package com.microservice.celulares.repository;
+
+public interface CelularDao {
+
+}

@@ -1,0 +1,23 @@
+package com.microservice.celulares.controllers;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.microservice.celulares.entity.Celular;
+
+@RestController
+public class CelularController {
+
+	@GetMapping()
+	public List<Celular> list(){
+		return service.findAll();
+	}
+	
+	@DeleteMapping()
+	
+	@PostMapping()
+	
+	@PutMapping()
+}

@@ -1,0 +1,7 @@
+package com.microservice.celulares.service;
+
+public interface CelularService {
+
+	public List<Celular> findAll();
+	
+}
