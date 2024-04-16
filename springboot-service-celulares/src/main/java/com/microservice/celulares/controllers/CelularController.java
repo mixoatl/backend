@@ -1,8 +1,10 @@
 package com.microservice.celulares.controllers;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,13 +24,25 @@ public class CelularController {
 	@Autowired
 	private CelularService service;
 	
+	@Value("${server.port}")
+	private Integer port;
+	
 	@GetMapping("/list")
 	public List<Celular> list(){
-		return service.findAll();
+		return service.findAll().stream().map(cel -> {
+			cel.setPort(port);
+			return cel;
+		}).collect(Collectors.toList());
 	}
 	
 	@GetMapping("/celular/{id}")
 	public Celular detail(@PathVariable Long id){
+		
+	try {
+		Thread.sleep(2000L);
+	}catch(InterruptedException e) {
+		e.printStackTrace();
+	}
 		return service.findById(id);
 	}
 	
