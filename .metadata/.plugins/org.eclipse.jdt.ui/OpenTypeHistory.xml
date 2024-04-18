@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=springboot-service-celulares/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.microservice.celulares.service{CelularService.java[CelularService" modifiers="513" timestamp="1711010673000"/>
+    <typeInfo handle="=springboot-service-store/\/Users\/mixoatl\/.m2\/repository\/org\/apache\/commons\/commons-math\/2.2\/commons-math-2.2.jar=/maven.pomderived=/true=/=/test=/true=/=/maven.groupId=/org.apache.commons=/=/maven.artifactId=/commons-math=/=/maven.version=/2.2=/=/maven.scope=/runtime=/=/maven.pomderived=/true=/&lt;org.apache.commons.math.stat.descriptive(StorelessUnivariateStatistic.class[StorelessUnivariateStatistic" modifiers="1537" timestamp="1298744672000"/>
+    <typeInfo handle="=springboot-service-store/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.microservice.store.services{StoreService.java[StoreService" modifiers="513" timestamp="1711018247000"/>
+</typeInfoHistroy>

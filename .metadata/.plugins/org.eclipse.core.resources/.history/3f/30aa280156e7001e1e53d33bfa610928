@@ -1,5 +1,0 @@
-package com.microservice.celulares.entity;
-
-public class Celular {
-
-}
